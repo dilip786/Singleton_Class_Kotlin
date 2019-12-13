@@ -11,12 +11,17 @@ In a typical Android app, there are many objects for which we only need one glo
  In Kotlin, A singleton is created by simply declaring an object.
 
 ```
-object MySingleton
-{
-	init
-	{
-		// Do something.
-	}
+object MySingleton {
+
+    var sampleText = "Android - Java"
+
+    init {
+        Log.e("Singleton", "init block called")
+    }
+
+    fun printText() {
+        Log.e("Singleton", sampleText)
+    }
 }
 
 ```
