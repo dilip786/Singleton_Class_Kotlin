@@ -24,6 +24,19 @@ object MySingleton {
     }
 }
 
+ override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        MySingleton.printText()
+
+        MySingleton.sampleText = "First"
+        MySingleton.printText()
+
+        MySingleton.sampleText = "Second"
+        MySingleton.printText()
+    }
+
 ```
 #### Key Points:
 
